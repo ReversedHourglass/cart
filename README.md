@@ -1,16 +1,9 @@
-# cart
+# Cart app
 
-A new Flutter project.
+Simple application providing a catalog of articles in categories and a cart.
 
-## Getting Started
+App uses the Digifood private API to retrieve categories and article from a selected store.
 
-This project is a starting point for a Flutter application.
+The Digifood API endpoint has been reversed engineered from the "Puy Du Fou" Android application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+There is no extra setup required to run the app on an Android simulator.
