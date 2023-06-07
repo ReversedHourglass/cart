@@ -2,7 +2,7 @@ part of 'cart_bloc.dart';
 
 class CartState extends Equatable {
   final Map<Article, int> articles;
-  final double total;
+  final int total;
 
   const CartState({
     required this.articles,
@@ -11,7 +11,7 @@ class CartState extends Equatable {
 
   CartState copyWith({
     Map<Article, int>? articles,
-    double? total,
+    int? total,
   }) {
     return CartState(
       articles: articles ?? this.articles,
