@@ -23,6 +23,10 @@ class CatalogRemoteDataSource extends CatalogDataSource {
       },
     );
 
+    if (response.statusCode != 200) {
+      throw Exception("Request to the digifood API failed.");
+    }
+
     return Catalog.fromEntity(
         CatalogEntity.fromJson(jsonDecode(response.body)));
   }

@@ -1,4 +1,5 @@
 import 'package:cart/core/features/cart/presentation/bloc/cart_bloc.dart';
+import 'package:cart/core/features/catalog/data/datasources/catalog_local_datasoure.dart';
 import 'package:cart/core/features/catalog/data/datasources/catalog_remote_datasource.dart';
 import 'package:cart/core/features/catalog/data/repositories/catalog_repository_impl.dart';
 import 'package:cart/core/features/catalog/presentation/bloc/catalog_bloc.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
           create: (context) => CatalogBloc(
             repository: CatalogRepositoryImpl(
               remoteDataSource: CatalogRemoteDataSource(),
+              localDataSource: CatalogLocalDataSource(),
             ),
           )..add(
               CatalogRequestEvent(),

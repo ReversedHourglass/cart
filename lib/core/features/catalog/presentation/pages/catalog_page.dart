@@ -108,6 +108,14 @@ class CatalogPage extends StatelessWidget {
                                         article.imageUrl,
                                         width: 50,
                                         height: 50,
+                                        errorBuilder:
+                                            (context, error, stackTrace) {
+                                          return const SizedBox(
+                                            width: 50,
+                                            height: 50,
+                                            child: FlutterLogo(),
+                                          );
+                                        },
                                       ),
                                       title: Text(article.name),
                                       subtitle: article.description != null
