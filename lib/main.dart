@@ -16,9 +16,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Cart Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: BlocProvider(
         create: (context) => CatalogBloc(
           repository: CatalogRepositoryImpl(
@@ -27,7 +24,7 @@ class MyApp extends StatelessWidget {
         )..add(
             CatalogRequestEvent(),
           ),
-        child: const CatalogPage(),
+        child: CatalogPage(),
       ),
     );
   }
