@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:cart/core/features/catalog/data/models/catalog.dart';
 import 'package:cart/core/features/catalog/domain/repositories/catalog_repository.dart';
 import 'package:equatable/equatable.dart';
-
-import '../../catalog/data/models/catalog.dart';
 
 part 'catalog_event.dart';
 part 'catalog_state.dart';
