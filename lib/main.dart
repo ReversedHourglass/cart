@@ -1,3 +1,5 @@
+import 'package:cart/core/features/catalog/data/datasources/catalog_remote_datasource.dart';
+import 'package:cart/core/features/catalog/data/repositories/catalog_repository_impl.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -59,6 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+
+    CatalogRemoteDataSource().getCatalog();
   }
 
   @override
